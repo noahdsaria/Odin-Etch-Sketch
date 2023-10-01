@@ -9,4 +9,19 @@ let createDiv = function () {
     }
 };
 
+// Make sure to create grid first before adding event listeners!
 createDiv();
+
+let changeColor = function (element) {
+    element.style.backgroundColor = 'blue';
+}
+
+const pixels = document.querySelectorAll(".grid-box");
+
+pixels.forEach((pixel) => {
+    pixel.addEventListener('mouseover', () => {
+    changeColor(pixel);
+    })
+});
+
+
