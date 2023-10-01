@@ -29,7 +29,7 @@ body {
 
 .grid-box {
     height: 6.25%;
-    border: 0px solid black;
-    flex: 1 1 6.25%;
+    width: 6.25%;
+    flex: 1 1 auto;
     background-color: red;
 }
