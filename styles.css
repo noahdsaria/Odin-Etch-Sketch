@@ -11,25 +11,100 @@ html {
 body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    background-color: #FFFFF0;
+
+}
+
+#banner {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #FFFFF0;
+    padding: 25px;
+    margin: 0px;
+    margin-bottom: 40px;
+    background-color:maroon;
+    box-shadow: 0px 7px 15px lightslategray;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+}
+
+#main-content {
+    display:flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 
 #grid-container {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex: 0 0 auto;
     flex-wrap: wrap;
-    border: 10px solid black;
+    border-color: transparent;
+    box-shadow: 0px 7px 15px lightslategray;
 }
+
 
 .grid-box {
     height: 6.25%;
     width: 6.25%;
     flex: 1 1 auto;
-    background-color: red;
+    background-color: #FFFFF0;
+    box-shadow: 0px 7px 15px lightslategray;
+}
+
+#sub-menu {
+    background-color: #FFFFF0;
+    border-radius: 24px;
+    box-shadow: 0px 7px 15px lightslategray;
+    width: 200px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+
+#slider > input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.buttons {
+    background-color: maroon;
+    padding: 15px;
+    border-radius:24px;
+    display: flex;
+    gap: 10px;
+}
+
+#rainbow, #erase {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0px;
+}
+
+#rainbow {
+    background-image: url("images/rainbow-scroll.gif");
+}
+
+
+#display-val {
+    font-size: 25px;
+    text-align: center;
+    color: maroon;
 }

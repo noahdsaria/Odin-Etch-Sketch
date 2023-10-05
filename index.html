@@ -8,12 +8,30 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div>
-        <div id="displayVal">16x16</div>
-        <input type="range" id="size" name="size" min="1"
-        max="100" value="16" step="1">
+    <div id="banner">
+        Etch & Sketch 
+    </div>
+    <div id="main-content">
+
+        <div id="sub-menu">
+            <div id="slider">
+                <div id="display-val">16x16</div>
+                <input type="range" id="size" name="size" min="1"
+                max="100" value="16" step="1">
+            </div>
+            <div class="buttons">
+                <div><button id="rainbow"></button></div>
+                <div><button id="erase">Erase</button></div>
+            </div>
+
+        </div>      
+
+        <div id="grid-container"></div>
+
+        <div style=" height: 500px; width: 200px;"></div>
+        
     </div> 
-    <div id="grid-container"></div>
+
     
 </body>
 </html>
